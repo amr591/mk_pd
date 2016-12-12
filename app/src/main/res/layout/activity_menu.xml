@@ -81,7 +81,7 @@
         android:id="@+id/btnTroubleShooting" />
 
     <Button
-        android:text="Формирование отчетов"
+        android:text="Формирование отчета"
         android:textSize="24sp"
         android:background="@color/colorPrimary"
         android:textColor="@color/white"

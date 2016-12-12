@@ -539,15 +539,15 @@ public class FileParser {
         return date;
     }
 
-    public static ArrayList<HashMap<String, String>> getListForReport(JsonObject lastObject,
-                                                                      JsonObject preLastObject,
-                                                                      JsonArray troubles,
+    public static ArrayList<HashMap<String, String>> getListForReport(JsonObject jMeasurements, JsonArray troubles,
                                                                       String station, String park,
                                                                       ArrayList<String> switches) {
         ArrayList<HashMap<String, String>> list = new ArrayList<>();
         for (String switch_: switches) {
-            list.addAll(getDataForReport(lastObject,
-                    preLastObject,
+            JsonObject obj1 = FileParser.getLastObject(jMeasurements, "measurements", station, park, switch_);
+            JsonObject obj2 = FileParser.getScnLastObject(jMeasurements, "measurements", station, park, switch_);
+            list.addAll(getDataForReport(obj1,
+                    obj2,
                     troubles,
                     station, park, switch_));
         }
@@ -558,14 +558,14 @@ public class FileParser {
                                                                       JsonObject preLastObject,
                                                                       JsonArray troubles,
                                                                       String station, String park, String switch_) {
-        JsonArray array1 = lastObject.getAsJsonArray("result");
-        JsonArray array2 = preLastObject.getAsJsonArray("result");
+        JsonArray array1 = lastObject.has("result") ? lastObject.getAsJsonArray("result") : new JsonArray();
+        JsonArray array2 = preLastObject.has("result") ? preLastObject.getAsJsonArray("result") : new JsonArray();
         ArrayList<HashMap<String, String>> list = new ArrayList<>();
         {
             HashMap<String, String> map = new HashMap<>();
             map.put("element", "Стрелка #"+switch_);
-            map.put("template", lastObject.get(DATE).getAsString().substring(0, 10));
-            map.put("level", preLastObject.get(DATE).getAsString().substring(0, 10));
+            map.put("template", lastObject.has(DATE) ? lastObject.get(DATE).getAsString().substring(0, 10) : "-");
+            map.put("level", preLastObject.has(DATE) ? preLastObject.get(DATE).getAsString().substring(0, 10) : "-");
             map.put("date", "");
 
             list.add(map);

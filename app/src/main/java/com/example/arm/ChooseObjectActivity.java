@@ -160,11 +160,16 @@ public class ChooseObjectActivity extends AppCompatActivity {
                 tvParams.setText(station + " - " + park);
                 positionPark = position;
 
+                if (actionMode == ACTION_MODE_REPORT) {
+                    startActivity(new Intent(ChooseObjectActivity.this, ReportLastActivity.class));
+                }
+                else {
                     adapterSwitches.clear();
                     datasetSwitches.clear();
                     datasetSwitches = FileParser.getSwitches(mainObject, station, park);
                     adapterSwitches.addAll(datasetSwitches);
                     adapterSwitches.notifyDataSetChanged();
+                }
 
             }
         });

@@ -100,7 +100,7 @@ public class ReportLastActivity extends AppCompatActivity {
         //TEXTVIEW - строка с параметрами объекта
         //=====================================================================
         tvParams = (TextView)findViewById(R.id.tvParamsReportLast);
-        tvParams.setText(station + " - " + park + " - " + switch_);
+        tvParams.setText(station + " - " + park);
         //=====================================================================
 
         //BUTTON - сохранить
@@ -122,7 +122,7 @@ public class ReportLastActivity extends AppCompatActivity {
         //=====================================================================
 
         lvTable = (ListView)findViewById(R.id.lvReportLast);
-        ArrayList<HashMap<String, String>> list = FileParser.getListForReport(obj1, obj2, jsonTableOfTroubles.getAsJsonArray("troubles"), station, park, switches);
+        ArrayList<HashMap<String, String>> list = FileParser.getListForReport(jMeasurements, jsonTableOfTroubles.getAsJsonArray("troubles"), station, park, switches);
         adapter = new ExtendedSimpleAdapter(
                 currentActivity,
                 list,
