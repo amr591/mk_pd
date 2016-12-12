@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arm.MenuReportActivity">
+
+    <Button
+        android:text="Назад"
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="@drawable/button_background"
+        android:layout_margin="5dp"
+        android:id="@+id/btnBackFromReport" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_toEndOf="@+id/btnBackFromReport"
+        android:layout_toStartOf="@+id/btnUseless"
+        android:layout_alignTop="@+id/btnUseless"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/tvParamsReport" />
+
+    <Button
+        android:text=""
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:id="@+id/btnUseless"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/btnBackFromReport"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"/>
+
+    <Button
+        android:text="Отчет по последним промерам"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="180dp"
+        android:id="@+id/btnReportLast"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Отчет по последним промерам\nв сравнении с предыдущими"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btnReportLast"
+        android:layout_alignStart="@+id/btnReportLast"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btnReportLastTwo" />
+
+    <Button
+        android:text="Отчет по неисправностям"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btnReportLastTwo"
+        android:layout_alignStart="@+id/btnReportLastTwo"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btnReportTroubles" />
+</RelativeLayout>

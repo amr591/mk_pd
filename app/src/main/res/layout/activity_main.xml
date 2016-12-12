@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="Назад"
+                android:layout_width="384px"
+                android:layout_height="130px"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:background="@drawable/button_background"
+                android:layout_margin="5dp"
+                android:id="@+id/btnBackInspection" />
+
+            <TextView
+                android:text=""
+                android:layout_width="1152px"
+                android:layout_height="130px"
+                android:layout_toEndOf="@+id/btnBackInspection"
+                android:layout_toStartOf="@+id/btnUselessInspection"
+                android:layout_alignTop="@+id/btnUselessInspection"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:id="@+id/tvParamsInspection" />
+
+            <Button
+                android:layout_width="384px"
+                android:layout_height="130px"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:id="@+id/btnUselessInspection"
+                android:clickable="false"
+                android:layout_margin = "5dp"
+                android:layout_alignTop="@+id/btnBackInspection"
+                android:layout_alignParentEnd="true"
+                android:textSize="30sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="horizontal"
+            android:layout_marginTop="140px">
+            <Button
+                android:text="Элемент стрелочного перевода"
+                android:id="@+id/buttonNumber"
+                android:layout_width="920px"
+                android:layout_height="100px"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="@color/colorTableHeading" />
+            <GridLayout
+                android:layout_width="400px"
+                android:layout_height="100px">
+                <LinearLayout
+                    android:layout_row="0"
+                    android:layout_column="0">
+                    <Button
+                        android:text="Текущий осмотр"
+                        android:id="@+id/buttonosm"
+                        android:layout_width="400px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_row="1"
+                    android:layout_column="0">
+                    <Button
+                        android:text="Шаблон"
+                        android:id="@+id/butosm1"
+                        android:layout_width="200px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                    <Button
+                        android:text="Уровень"
+                        android:layout_width="200px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </GridLayout>
+            <GridLayout
+                android:layout_width="400px"
+                android:layout_height="100px">
+                <LinearLayout
+                    android:layout_row="0"
+                    android:layout_column="0">
+                    <Button
+                        android:text="Предыдущий осмотр"
+                        android:layout_width="400px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_row="1"
+                    android:layout_column="0">
+                    <Button
+                        android:text="Шаблон"
+                        android:layout_width="200px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                    <Button
+                        android:text="Уровень"
+                        android:layout_width="200px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </GridLayout>
+
+            <Button
+                android:text="Шаблон"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:textSize="20sp"
+                android:background="@color/colorTableHeading"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="355px"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:id="@+id/tableScroll"
+            android:background="#ffffff">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="355px"
+                android:id="@+id/tableMainLayout">
+
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:orientation="horizontal">
+            <Button
+                android:text="Элемент стрелочного перевода"
+                android:layout_width="920px"
+                android:layout_height="100px"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="@color/colorTableHeading" />
+
+            <GridLayout
+                android:layout_width="800px"
+                android:layout_height="100px">
+                <LinearLayout
+                    android:layout_row="0"
+                    android:layout_column="0">
+                    <Button
+                        android:text="Перечень неисправностей"
+                        android:layout_width="800px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_row="1"
+                    android:layout_column="0">
+                    <Button
+                        android:text="Текущий осмотр"
+                        android:layout_width="400px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff" />
+                    <Button
+                        android:text="Предыдущий осмотр"
+                        android:layout_width="400px"
+                        android:layout_height="50px"
+                        android:textSize="20sp"
+                        android:background="@color/colorTableHeading"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </GridLayout>
+
+
+            <Button
+                android:text="Величина\nмм/шт"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:textSize="20sp"
+                android:background="@color/colorTableHeading"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="305px"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:id="@+id/tableScroll2"
+            android:background="#ffffff">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="305px"
+                android:id="@+id/tableMainLayout2">
+
+            </TableLayout>
+        </ScrollView>
+
+    </GridLayout>
+
+
+</LinearLayout>

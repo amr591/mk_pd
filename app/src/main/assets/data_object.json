@@ -1,0 +1,814 @@
+{
+	"stations" : [
+		{
+			"name" : "Самара",
+			"id" : "100",
+			"short_name" : "SMR",
+			"parks" : [
+				{
+					"id" : "110",
+					"name" : "Парк 11",
+					"short_name" : "P11",
+					"switches" : [
+						{
+							"id" : "111",
+							"name" : "79/81",
+							"short_name" : "79/81",
+							"type" : "3"
+						},
+						{
+							"id" : "112",
+							"short_name" : "01/03",
+							"name" : "01/03",
+							"type" : "2"
+						},
+						{
+							"id" : "113",
+							"short_name" : "05/07",
+							"name" : "05/07",
+							"type" : "1"
+						},
+						{
+							"id" : "114",
+							"short_name" : "02/04",
+							"name" : "02/04",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "120",
+					"name" : "Парк 12",
+					"short_name" : "P12",
+					"switches" : [
+						{
+							"id" : "121",
+							"name" : "22/24",
+							"short_name" : "22/24",
+							"type" : "1"
+						},
+						{
+							"id" : "122",
+							"short_name" : "31/33",
+							"name" : "31/33",
+							"type" : "2"
+						},
+						{
+							"id" : "123",
+							"short_name" : "45/47",
+							"name" : "45/47",
+							"type" : "1"
+						},
+						{
+							"id" : "124",
+							"short_name" : "23",
+							"name" : "23",
+							"type" : "1"
+						}
+					]
+				},
+				{
+					"id" : "130",
+					"name" : "Парк 13",
+					"short_name" : "P13",
+					"switches" : [
+						{
+							"id" : "131",
+							"name" : "67",
+							"short_name" : "67",
+							"type" : "3"
+						},
+						{
+							"id" : "132",
+							"short_name" : "69",
+							"name" : "69",
+							"type" : "2"
+						},
+						{
+							"id" : "133",
+							"short_name" : "23/25",
+							"name" : "23/25",
+							"type" : "1"
+						},
+						{
+							"id" : "134",
+							"short_name" : "66/68",
+							"name" : "66/68",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "140",
+					"name" : "Парк 14",
+					"short_name" : "P14",
+					"switches" : [
+						{
+							"id" : "141",
+							"name" : "81/83",
+							"short_name" : "81/83",
+							"type" : "3"
+						},
+						{
+							"id" : "142",
+							"short_name" : "142",
+							"name" : "142",
+							"type" : "2"
+						},
+						{
+							"id" : "143",
+							"short_name" : "143",
+							"name" : "143",
+							"type" : "1"
+						},
+						{
+							"id" : "144",
+							"short_name" : "144",
+							"name" : "144",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "150",
+					"name" : "Парк 15",
+					"short_name" : "P15",
+					"switches" : [
+						{
+							"id" : "151",
+							"name" : "151",
+							"short_name" : "151",
+							"type" : "3"
+						},
+						{
+							"id" : "152",
+							"short_name" : "152",
+							"name" : "152",
+							"type" : "2"
+						},
+						{
+							"id" : "153",
+							"short_name" : "153",
+							"name" : "153",
+							"type" : "1"
+						},
+						{
+							"id" : "154",
+							"short_name" : "154",
+							"name" : "154",
+							"type" : "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "Безымянка",
+			"id" : "200",
+			"short_name" : "BZM",
+			"parks" : [
+				{
+					"id" : "211",
+					"name" : "Парк 21",
+					"short_name" : "P21",
+					"switches" : [
+						{
+							"id" : "211",
+							"name" : "211",
+							"short_name" : "211",
+							"type" : "3"
+						},
+						{
+							"id" : "212",
+							"short_name" : "212",
+							"name" : "212",
+							"type" : "2"
+						},
+						{
+							"id" : "213",
+							"short_name" : "213",
+							"name" : "213",
+							"type" : "1"
+						},
+						{
+							"id" : "214",
+							"short_name" : "214",
+							"name" : "214",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "222",
+					"name" : "Парк 22",
+					"short_name" : "P22",
+					"switches" : [
+						{
+							"id" : "221",
+							"name" : "221",
+							"short_name" : "221",
+							"type" : "3"
+						},
+						{
+							"id" : "222",
+							"short_name" : "222",
+							"name" : "222",
+							"type" : "2"
+						},
+						{
+							"id" : "223",
+							"short_name" : "223",
+							"name" : "223",
+							"type" : "1"
+						},
+						{
+							"id" : "224",
+							"short_name" : "224",
+							"name" : "224",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "233",
+					"name" : "Парк 23",
+					"short_name" : "P23",
+					"switches" : [
+						{
+							"id" : "231",
+							"name" : "231",
+							"short_name" : "231",
+							"type" : "3"
+						},
+						{
+							"id" : "232",
+							"short_name" : "232",
+							"name" : "232",
+							"type" : "2"
+						},
+						{
+							"id" : "233",
+							"short_name" : "233",
+							"name" : "233",
+							"type" : "1"
+						},
+						{
+							"id" : "234",
+							"short_name" : "234",
+							"name" : "234",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "244",
+					"name" : "Парк 24",
+					"short_name" : "P24",
+					"switches" : [
+						{
+							"id" : "241",
+							"name" : "241",
+							"short_name" : "241",
+							"type" : "3"
+						},
+						{
+							"id" : "242",
+							"short_name" : "242",
+							"name" : "242",
+							"type" : "2"
+						},
+						{
+							"id" : "243",
+							"short_name" : "243",
+							"name" : "243",
+							"type" : "1"
+						},
+						{
+							"id" : "244",
+							"short_name" : "244",
+							"name" : "244",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "255",
+					"name" : "Парк 25",
+					"short_name" : "P25",
+					"switches" : [
+						{
+							"id" : "251",
+							"name" : "251",
+							"short_name" : "251",
+							"type" : "3"
+						},
+						{
+							"id" : "252",
+							"short_name" : "252",
+							"name" : "252",
+							"type" : "2"
+						},
+						{
+							"id" : "253",
+							"short_name" : "253",
+							"name" : "253",
+							"type" : "1"
+						},
+						{
+							"id" : "254",
+							"short_name" : "254",
+							"name" : "254",
+							"type" : "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "Пятилетка",
+			"id" : "300",
+			"short_name" : "5LK",
+			"parks" : [
+				{
+					"id" : "311",
+					"name" : "Парк 31",
+					"short_name" : "P31",
+					"switches" : [
+						{
+							"id" : "311",
+							"name" : "311",
+							"short_name" : "311",
+							"type" : "3"
+						},
+						{
+							"id" : "312",
+							"short_name" : "312",
+							"name" : "312",
+							"type" : "2"
+						},
+						{
+							"id" : "313",
+							"short_name" : "313",
+							"name" : "313",
+							"type" : "1"
+						},
+						{
+							"id" : "314",
+							"short_name" : "314",
+							"name" : "314",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "322",
+					"name" : "Парк 32",
+					"short_name" : "P32",
+					"switches" : [
+						{
+							"id" : "321",
+							"name" : "321",
+							"short_name" : "321",
+							"type" : "3"
+						},
+						{
+							"id" : "322",
+							"short_name" : "322",
+							"name" : "322",
+							"type" : "2"
+						},
+						{
+							"id" : "323",
+							"short_name" : "323",
+							"name" : "323",
+							"type" : "1"
+						},
+						{
+							"id" : "324",
+							"short_name" : "324",
+							"name" : "02/04",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "333",
+					"name" : "Парк 33",
+					"short_name" : "P33",
+					"switches" : [
+						{
+							"id" : "331",
+							"name" : "331",
+							"short_name" : "331",
+							"type" : "3"
+						},
+						{
+							"id" : "332",
+							"short_name" : "332",
+							"name" : "332",
+							"type" : "2"
+						},
+						{
+							"id" : "333",
+							"short_name" : "333",
+							"name" : "333",
+							"type" : "1"
+						},
+						{
+							"id" : "334",
+							"short_name" : "334",
+							"name" : "334",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "344",
+					"name" : "Парк 34",
+					"short_name" : "P34",
+					"switches" : [
+						{
+							"id" : "341",
+							"name" : "341",
+							"short_name" : "341",
+							"type" : "3"
+						},
+						{
+							"id" : "342",
+							"short_name" : "342",
+							"name" : "342",
+							"type" : "2"
+						},
+						{
+							"id" : "343",
+							"short_name" : "343",
+							"name" : "343",
+							"type" : "1"
+						},
+						{
+							"id" : "344",
+							"short_name" : "344",
+							"name" : "344",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "355",
+					"name" : "Парк 35",
+					"short_name" : "P35",
+					"switches" : [
+						{
+							"id" : "351",
+							"name" : "351",
+							"short_name" : "351",
+							"type" : "3"
+						},
+						{
+							"id" : "352",
+							"short_name" : "352",
+							"name" : "352",
+							"type" : "2"
+						},
+						{
+							"id" : "353",
+							"short_name" : "353",
+							"name" : "353",
+							"type" : "1"
+						},
+						{
+							"id" : "354",
+							"short_name" : "354",
+							"name" : "354",
+							"type" : "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "Киркомбинат",
+			"id" : "400",
+			"short_name" : "KKN",
+			"parks" : [
+				{
+					"id" : "411",
+					"name" : "Парк 41",
+					"short_name" : "P41",
+					"switches" : [
+						{
+							"id" : "411",
+							"name" : "411",
+							"short_name" : "411",
+							"type" : "3"
+						},
+						{
+							"id" : "412",
+							"short_name" : "412",
+							"name" : "412",
+							"type" : "2"
+						},
+						{
+							"id" : "413",
+							"short_name" : "413",
+							"name" : "413",
+							"type" : "1"
+						},
+						{
+							"id" : "414",
+							"short_name" : "414",
+							"name" : "414",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "422",
+					"name" : "Парк 42",
+					"short_name" : "P42",
+					"switches" : [
+						{
+							"id" : "421",
+							"name" : "421",
+							"short_name" : "421",
+							"type" : "3"
+						},
+						{
+							"id" : "422",
+							"short_name" : "422",
+							"name" : "422",
+							"type" : "2"
+						},
+						{
+							"id" : "423",
+							"short_name" : "423",
+							"name" : "423",
+							"type" : "1"
+						},
+						{
+							"id" : "424",
+							"short_name" : "424",
+							"name" : "424",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "433",
+					"name" : "Парк 43",
+					"short_name" : "P43",
+					"switches" : [
+						{
+							"id" : "431",
+							"name" : "431",
+							"short_name" : "431",
+							"type" : "3"
+						},
+						{
+							"id" : "432",
+							"short_name" : "432",
+							"name" : "432",
+							"type" : "2"
+						},
+						{
+							"id" : "433",
+							"short_name" : "433",
+							"name" : "433",
+							"type" : "1"
+						},
+						{
+							"id" : "434",
+							"short_name" : "434",
+							"name" : "434",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "444",
+					"name" : "Парк 44",
+					"short_name" : "P44",
+					"switches" : [
+						{
+							"id" : "441",
+							"name" : "441",
+							"short_name" : "441",
+							"type" : "3"
+						},
+						{
+							"id" : "442",
+							"short_name" : "442",
+							"name" : "442",
+							"type" : "2"
+						},
+						{
+							"id" : "443",
+							"short_name" : "443",
+							"name" : "443",
+							"type" : "1"
+						},
+						{
+							"id" : "444",
+							"short_name" : "444",
+							"name" : "444",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "455",
+					"name" : "Парк 45",
+					"short_name" : "P45",
+					"switches" : [
+						{
+							"id" : "451",
+							"name" : "451",
+							"short_name" : "451",
+							"type" : "3"
+						},
+						{
+							"id" : "452",
+							"short_name" : "452",
+							"name" : "452",
+							"type" : "2"
+						},
+						{
+							"id" : "453",
+							"short_name" : "453",
+							"name" : "453",
+							"type" : "1"
+						},
+						{
+							"id" : "454",
+							"short_name" : "454",
+							"name" : "454",
+							"type" : "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "Школьная",
+			"id" : "500",
+			"short_name" : "SHK",
+			"parks" : [
+				{
+					"id" : "511",
+					"name" : "Парк 51",
+					"short_name" : "P51",
+					"switches" : [
+						{
+							"id" : "511",
+							"name" : "511",
+							"short_name" : "511",
+							"type" : "3"
+						},
+						{
+							"id" : "512",
+							"short_name" : "512",
+							"name" : "512",
+							"type" : "2"
+						},
+						{
+							"id" : "513",
+							"short_name" : "513",
+							"name" : "513",
+							"type" : "1"
+						},
+						{
+							"id" : "514",
+							"short_name" : "514",
+							"name" : "514",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "522",
+					"name" : "Парк 52",
+					"short_name" : "P52",
+					"switches" : [
+						{
+							"id" : "521",
+							"name" : "521",
+							"short_name" : "521",
+							"type" : "3"
+						},
+						{
+							"id" : "522",
+							"short_name" : "522",
+							"name" : "522",
+							"type" : "2"
+						},
+						{
+							"id" : "523",
+							"short_name" : "523",
+							"name" : "523",
+							"type" : "1"
+						},
+						{
+							"id" : "524",
+							"short_name" : "524",
+							"name" : "524",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "533",
+					"name" : "Парк 53",
+					"short_name" : "P53",
+					"switches" : [
+						{
+							"id" : "531",
+							"name" : "70",
+							"short_name" : "70",
+							"type" : "3"
+						},
+						{
+							"id" : "532",
+							"short_name" : "72",
+							"name" : "72",
+							"type" : "2"
+						},
+						{
+							"id" : "533",
+							"short_name" : "74",
+							"name" : "74",
+							"type" : "1"
+						},
+						{
+							"id" : "534",
+							"short_name" : "76",
+							"name" : "76",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "544",
+					"name" : "Парк 54",
+					"short_name" : "P54",
+					"switches" : [
+						{
+							"id" : "541",
+							"name" : "541",
+							"short_name" : "61",
+							"type" : "3"
+						},
+						{
+							"id" : "542",
+							"short_name" : "63",
+							"name" : "63",
+							"type" : "2"
+						},
+						{
+							"id" : "543",
+							"short_name" : "65",
+							"name" : "65",
+							"type" : "1"
+						},
+						{
+							"id" : "544",
+							"short_name" : "67",
+							"name" : "67",
+							"type" : "4"
+						}
+					]
+				},
+				{
+					"id" : "555",
+					"name" : "Парк 55",
+					"short_name" : "P55",
+					"switches" : [
+						{
+							"id" : "551",
+							"name" : "51",
+							"short_name" : "51",
+							"type" : "3"
+						},
+						{
+							"id" : "552",
+							"short_name" : "43",
+							"name" : "43",
+							"type" : "2"
+						},
+						{
+							"id" : "553",
+							"short_name" : "57",
+							"name" : "57",
+							"type" : "1"
+						},
+						{
+							"id" : "554",
+							"short_name" : "59",
+							"name" : "59",
+							"type" : "4"
+						}
+					]
+				}
+			]
+		}
+	]
+}

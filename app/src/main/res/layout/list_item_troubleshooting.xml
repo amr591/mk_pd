@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <TextView
+        android:id="@+id/tvElement"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvTrouble"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvViewDate"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvSolvingDate"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvPost"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+</LinearLayout>

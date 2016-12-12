@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="1200dp"
+    android:layout_height="600dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/button_background"
+            android:text="НАЗАД"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:id="@+id/btnDialogBack"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/button_background"
+            android:text="ДОБАВИТЬ"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:id="@+id/btnDialogAdd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="Элемент:"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:text="Неисправность:"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Величина (если необходимо):"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ListView
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lvElementsDialog"
+            android:divider="@color/black"
+            android:dividerHeight="2dp">
+        </ListView>
+
+        <ListView
+            android:layout_width="550dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lvTroublesDialog"
+            android:divider="@color/black"
+            android:dividerHeight="2dp">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Величина"
+                android:textSize="24sp"
+                android:ems="10"
+                android:id="@+id/etValue" />
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1">
+            </GridView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

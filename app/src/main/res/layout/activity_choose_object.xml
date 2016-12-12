@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_object"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    tools:context="com.example.arm.ChooseObjectActivity">
+
+    <Button
+        android:text="Назад"
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="@drawable/button_background"
+        android:layout_margin="5dp"
+        android:id="@+id/btnBackChooseObject" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_toEndOf="@+id/btnBackChooseObject"
+        android:layout_toStartOf="@+id/btnUselessChooseObject"
+        android:layout_alignTop="@+id/btnUselessChooseObject"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/tvParamsChooseObject" />
+
+    <Button
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:id="@+id/btnUselessChooseObject"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/btnBackChooseObject"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:text="Выберите станцию:"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150px"
+        android:textSize="36sp"
+        android:id="@+id/tvStation" />
+
+    <ListView
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvStations"
+        android:layout_below="@+id/tvStation"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:choiceMode="singleChoice"/>
+
+    <TextView
+        android:text="Выберите парк:"
+        android:layout_width="376dp"
+        android:layout_marginLeft="41dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150px"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvStation"
+        android:textSize="36sp"
+        android:id="@+id/tvPark"/>
+
+    <ListView
+        android:layout_width="376dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/lvStations"
+        android:layout_toEndOf="@+id/lvStations"
+        android:layout_marginStart="41dp"
+        android:id="@+id/lvParks"
+        android:choiceMode="singleChoice"/>
+
+    <TextView
+        android:text="Выберите объект:"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvPark"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="150px"
+        android:textSize="36sp"
+        android:id="@+id/tvSwitch" />
+
+    <ListView
+        android:layout_width="376dp"
+        android:layout_height="match_parent"
+        android:id="@+id/lvSwitches"
+        android:layout_toEndOf="@+id/lvParks"
+        android:layout_alignTop="@+id/lvParks"
+        android:layout_marginStart="41dp"/>
+</RelativeLayout>

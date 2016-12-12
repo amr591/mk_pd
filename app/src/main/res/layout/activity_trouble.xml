@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trouble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arm.TroubleActivity">
+
+    <Button
+        android:text="Назад"
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="@drawable/button_background"
+        android:layout_margin="5dp"
+        android:id="@+id/btnBackFromTroubleshooting" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_toEndOf="@+id/btnBackFromTroubleshooting"
+        android:layout_toStartOf="@+id/btnUseless"
+        android:layout_alignTop="@+id/btnUseless"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/tvParamsTroubleshooting" />
+
+    <Button
+        android:text="Ввод промеров"
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:id="@+id/btnUseless"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/btnBackFromTroubleshooting"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnBackFromTroubleshooting"
+        android:layout_alignStart="@+id/btnBackFromTroubleshooting"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:text="№"
+            android:textSize="24sp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:background="@color/colorTableHeading"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Элемент"
+            android:textSize="24sp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:background="@color/colorTableHeading"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Неисправность"
+            android:textSize="24sp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:background="@color/colorTableHeading"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Величина"
+            android:textSize="24sp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:background="@color/colorTableHeading"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:id="@+id/lvTroubles"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/linearLayout3"
+        android:listSelector="@color/colorTableSelection" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:text="Добавить"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:id="@+id/btnAddTrouble"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:id="@+id/btnUpdateTrouble"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="Изменить"
+            android:visibility="invisible"
+            android:clickable="false"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

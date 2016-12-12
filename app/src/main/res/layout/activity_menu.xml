@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:gravity="center_horizontal"
+    tools:context="com.example.arm.MenuActivity">
+
+    <Button
+        android:text="Назад"
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="@drawable/button_background"
+        android:layout_margin="5dp"
+        android:id="@+id/btnBackMenu" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_toEndOf="@+id/btnBackMenu"
+        android:layout_toStartOf="@+id/btnUselessMenu"
+        android:layout_alignTop="@+id/btnUselessMenu"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/tvParams" />
+
+    <Button
+        android:id="@+id/btnUselessMenu"
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/btnBackMenu"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"/>
+
+
+    <Button
+        android:text="Осмотр стрелочного хозяйства"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:id="@+id/btnViewObject"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Просмотр данных предыдущего осмотра"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnViewPrev"
+        android:layout_below="@+id/btnViewObject"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Ввод данных об устранении неисправностей\nпредыдущего осмотра"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btnViewPrev"
+        android:layout_alignStart="@+id/btnViewPrev"
+        android:id="@+id/btnTroubleShooting" />
+
+    <Button
+        android:text="Формирование отчетов"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/btnTroubleShooting"
+        android:layout_alignStart="@+id/btnTroubleShooting"
+        android:id="@+id/btnReports"/>
+</RelativeLayout>

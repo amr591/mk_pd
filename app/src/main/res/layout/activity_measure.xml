@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:id="@+id/tableLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Назад"
+            android:id="@+id/button1"
+            android:layout_width="384px"
+            android:layout_height="130px"
+            android:background="@drawable/button_background"
+            android:textSize="30sp"
+            android:allowUndo="false"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:onClick="onClickBack"/>
+        <TextView
+            android:layout_width="1002px"
+            android:layout_height="120px"
+            android:textSize="30sp"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_vertical"
+            android:onClick="onClickClear"
+            android:gravity="center">
+        </TextView>
+
+
+        <Button
+            android:text="Ввод неисправностей"
+            android:id="@+id/button4"
+            android:layout_width="534px"
+            android:layout_height="130px"
+            android:background="@drawable/button_background"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:onClick="onClickTrouble"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="horizontal">
+            <Button
+                android:text="№"
+                android:id="@+id/buttonNumber"
+                android:layout_width="192px"
+                android:layout_height="100px"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:background="@color/colorTableHeading" />
+            <Button
+                android:text="Точка промера"
+                android:id="@+id/buttonPoint"
+                android:layout_width="1092px"
+                android:layout_height="100px"
+                android:textSize="30sp"
+                android:background="@color/colorTableHeading"
+                android:textColor="#ffffff" />
+            <Button
+                android:text="Шаблон"
+                android:id="@+id/buttonShablon"
+                android:layout_width="222px"
+                android:layout_height="100px"
+                android:textSize="30sp"
+                android:background="@color/colorTableHeading"
+                android:textColor="#ffffff" />
+            <Button
+                android:text="Уровень"
+                android:id="@+id/buttonUr"
+                android:layout_width="222px"
+                android:layout_height="100px"
+                android:textSize="30sp"
+                android:background="@color/colorTableHeading"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <Button
+            android:text="+/-"
+            android:id="@+id/buttonNun"
+            android:layout_width="192px"
+            android:layout_height="100px"
+            android:textSize="30sp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textColor="#030000"
+            android:onClick="onMyPlusClick"
+            android:background="@drawable/reg" />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="570px"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:id="@+id/tableScroll"
+            android:background="#ffffff">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="570px"
+                android:id="@+id/tableMainLayout">
+
+            </TableLayout>
+        </ScrollView>
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/verticalScroll"
+            android:layout_height="570px"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:scrollbars = "vertical"
+            android:background="#fefefe"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="570px"
+                android:orientation="vertical"
+                android:scrollbars = "vertical"
+                android:id="@+id/linearLayout1">
+
+            </LinearLayout>
+
+        </ScrollView>
+        <HorizontalScrollView
+            android:layout_width="1728px"
+            android:id="@+id/horizontalScroll"
+            android:layout_height="fill_parent"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout2">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <Button
+            android:layout_row="2"
+            android:layout_column="1"
+            android:id="@+id/buttonNum"
+            android:layout_width="190px"
+            android:layout_height="140px"
+            android:textSize="20sp"
+            android:onClick="onClickBlock"
+            android:background="@drawable/bluetooth" />
+    </GridLayout>
+
+</LinearLayout>

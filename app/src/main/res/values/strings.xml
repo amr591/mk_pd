@@ -1,0 +1,19 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">МК-ПД</string>
+    <string name="title">МК-ПД</string>
+
+
+    <string name="title_connecting">подключение к устройству</string>
+    <string name="title_connected">подключен к шаблону</string>
+    <string name="title_not_connected">не подключен</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Поиск устройств</string>
+    <string name="select_device">Выберите устройство</string>
+    <string name="none_paired">Нет добавленных устройств</string>
+    <string name="none_found">Устройства не найдены</string>
+    <string name="title_paired_devices">Добавленные устройства</string>
+    <string name="title_other_devices">Другие доступные устройства</string>
+    <string name="button_scan">Поиск устройств</string>
+
+</resources>

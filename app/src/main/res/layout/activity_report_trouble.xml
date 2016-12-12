@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_report_trouble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arm.ReportTroubleActivity">
+
+    <Button
+        android:text="Назад"
+        android:layout_width="384px"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="@drawable/button_background"
+        android:layout_margin="5dp"
+        android:id="@+id/btnBackFromReportLast" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_toEndOf="@+id/btnBackFromReportLast"
+        android:layout_toStartOf="@+id/btnSave"
+        android:layout_alignTop="@+id/btnSave"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/tvParamsReportLast" />
+
+    <Button
+        android:layout_width="384px"
+        android:text="Сохранить"
+        android:layout_height="130px"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:id="@+id/btnSave"
+        android:clickable="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/btnBackFromReportLast"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBackFromReportLast"
+        android:layout_alignStart="@+id/btnBackFromReportLast"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tvElement"
+            android:background="@color/colorTableHeading"
+            android:text="Элемент стрелочного перевода"
+            android:textColor="@color/white"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="1dp"/>
+
+        <TextView
+            android:id="@+id/tvTrouble"
+            android:background="@color/colorTableHeading"
+            android:text="Неисправность"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="1dp"/>
+
+        <TextView
+            android:id="@+id/tvViewDate"
+            android:background="@color/colorTableHeading"
+            android:text="Значение"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="1dp"/>
+
+        <TextView
+            android:id="@+id/tvSolvingDate"
+            android:background="@color/colorTableHeading"
+            android:text="Дата обнаружения"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="1dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lvReportLast"
+        android:choiceMode="multipleChoice"/>
+
+</RelativeLayout>

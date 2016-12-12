@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvElement"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvTrouble"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
