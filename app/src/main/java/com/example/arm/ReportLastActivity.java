@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.arm.adapter.ExtendedSimpleAdapter;
+import com.example.arm.parser.CSVParser;
 import com.example.arm.parser.FileParser;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -130,6 +131,7 @@ public class ReportLastActivity extends AppCompatActivity {
                 new String[] {ELEMENT, TEMPLATE, LEVEL, DATE},
                 new int[] {R.id.tvElement, R.id.tvTemplate, R.id.tvLevel, R.id.tvDate});
         lvTable.setAdapter(adapter);
+        Toast.makeText(currentActivity, CSVParser.ListToCSV(list), Toast.LENGTH_LONG).show();
         //=====================================================================
     }
 }
