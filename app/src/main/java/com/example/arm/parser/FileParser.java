@@ -2,6 +2,7 @@ package com.example.arm.parser;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Environment;
 
 import com.example.arm.ChooseObjectActivity;
 import com.example.arm.ChooseWorkerActivity;
@@ -15,7 +16,9 @@ import static com.example.arm.Constants.*;
 import com.example.arm.data.RailwayData;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
@@ -74,6 +77,31 @@ public class FileParser {
         }
     }
 
+    public static void saveFileToSDCard(String filename, String content) {
+        // проверяем доступность SD
+        if (!Environment.getExternalStorageState().equals(
+                Environment.MEDIA_MOUNTED)) {
+            return;
+        }
+        // получаем путь к SD
+        File sdPath = Environment.getExternalStorageDirectory();
+        // добавляем свой каталог к пути
+        sdPath = new File(sdPath.getAbsolutePath() + "/" + "Отчеты");
+        // создаем каталог
+        sdPath.mkdirs();
+        // формируем объект File, который содержит путь к файлу
+        File sdFile = new File(sdPath, filename);
+        try {
+            // открываем поток для записи
+            BufferedWriter bw = new BufferedWriter(new FileWriter(sdFile));
+            // пишем данные
+            bw.write(content);
+            // закрываем поток
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static ArrayList<String> getStations(JsonObject mainObject) {
         JsonArray stations = mainObject.getAsJsonArray("stations");

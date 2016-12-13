@@ -57,6 +57,8 @@ public class ReportLastActivity extends AppCompatActivity {
 
     ArrayList<String> switches;
 
+    ArrayList<HashMap<String, String>> list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,7 +115,9 @@ public class ReportLastActivity extends AppCompatActivity {
                 Calendar c = Calendar.getInstance();
                 SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
                 String date = df.format(c.getTime());
-                String filename = "ОТЧЕТ_" + station + "_" + park + "_" + switch_ + "_" + date + ".xls";
+                String filename = "ОТЧЕТ_" + station + "_" + park + "_" + date + ".csv";
+                String CSVContent = CSVParser.ListToCSV(list);
+                FileParser.saveFileToSDCard(filename, CSVContent);
                 Toast.makeText(currentActivity, "Отчет сохранен под именем\n" + filename, Toast.LENGTH_LONG).show();
             }
         });
@@ -123,7 +127,7 @@ public class ReportLastActivity extends AppCompatActivity {
         //=====================================================================
 
         lvTable = (ListView)findViewById(R.id.lvReportLast);
-        ArrayList<HashMap<String, String>> list = FileParser.getListForReport(jMeasurements, jsonTableOfTroubles.getAsJsonArray("troubles"), station, park, switches);
+        list = FileParser.getListForReport(jMeasurements, jsonTableOfTroubles.getAsJsonArray("troubles"), station, park, switches);
         adapter = new ExtendedSimpleAdapter(
                 currentActivity,
                 list,
@@ -131,7 +135,6 @@ public class ReportLastActivity extends AppCompatActivity {
                 new String[] {ELEMENT, TEMPLATE, LEVEL, DATE},
                 new int[] {R.id.tvElement, R.id.tvTemplate, R.id.tvLevel, R.id.tvDate});
         lvTable.setAdapter(adapter);
-        Toast.makeText(currentActivity, CSVParser.ListToCSV(list), Toast.LENGTH_LONG).show();
         //=====================================================================
     }
 }

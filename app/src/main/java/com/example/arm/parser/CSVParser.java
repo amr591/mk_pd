@@ -3,10 +3,6 @@ package com.example.arm.parser;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by amr59 on 12.12.2016.
- */
-
 public class CSVParser {
     public static String ListToCSV(ArrayList<HashMap<String, String>> list) {
         StringBuilder sb = new StringBuilder();
